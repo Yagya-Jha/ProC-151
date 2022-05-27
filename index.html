@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Car Demonstration</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="js/Base.js"></script>
+    <script src="js/Car.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="https://media.istockphoto.com/photos/illustration-seamless-grey-studio-gradient-background-for-product-picture-id1183209227?k=20&m=1183209227&s=612x612&w=0&h=OtK6fp4PyvZFj71AIMthDNsdCInAC6AKbZO4MHuSfGQ="></a-sky>
+      <!-- PLANE BASE -->
+      <a-entity id="base" base></a-entity>
+      <!-- CAR MODEL -->
+      <a-entity id="car-model" car="rot_speed: 1; scale: 15"></a-entity>
+
+      <!-- CAMERA -->
+      <a-entity
+        camera
+        position="0 50 250"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
